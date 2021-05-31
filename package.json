@@ -14,14 +14,19 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.reactUseState"
+		"onCommand:extension.reactUseState",
+		"onCommand:extension.useStateSnippet"
 	],
 	"main": "./extension.js",
 	"contributes": {
 		"commands": [
 			{
 				"command": "extension.reactUseState",
-				"title": "use State"
+				"title": "use State Setter"
+			},
+			{
+				"command": "extension.useStateSnippet",
+				"title": "use State Snippet"
 			}
 		]
 	},

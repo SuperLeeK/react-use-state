@@ -19,3 +19,17 @@ If you select or have clipboard, ( like hello )
 this will make to "setHello"
 
 Done.
+
+
+# Change log
+## 0.0.1
+Initiallize
+
+## 0.0.2
+Add Function
+
+## 0.0.3
+Hot Fix by active at all current TextEditor
+
+## 0.0.4
+Add useState Snippet Improve!!!
