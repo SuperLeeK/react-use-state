@@ -1,6 +1,5 @@
-// The module 'vscode' contains the VS Code extensibility API
-// Import the module and reference it with the alias vscode in your code below
-const vscode = require('vscode');
+const clipboardy = require( "clipboardy" );
+const vscode = require( "vscode" );
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
@@ -9,24 +8,29 @@ const vscode = require('vscode');
  * @param {vscode.ExtensionContext} context
  */
 function activate(context) {
+	const { window, commands, Position } = vscode;
+	const editor = window.activeTextEditor;
 
-	// Use the console to output diagnostic information (console.log) and errors (console.error)
-	// This line of code will only be executed once when your extension is activated
-	console.log('Congratulations, your extension "react-use-state-snippet" is now active!');
+	if( !editor ) return window.showErrorMessage( 'Need to using on activeTextEditor' );
 
-	// The command has been defined in the package.json file
-	// Now provide the implementation of the command with  registerCommand
-	// The commandId parameter must match the command field in package.json
-	let disposable = vscode.commands.registerCommand('extension.helloWorld', function () {
-		// The code you place here will be executed every time your command is executed
+	const useState = vscode.commands.registerCommand('extension.reactUseState', () => {
+		const clipboard = clipboardy.readSync();
+		const selectedText = editor.document.getText( editor.selection )
+		const isSelect = selectedText.length > 0;
 
-		// Display a message box to the user
-		vscode.window.showInformationMessage('Hello World!');
+		const _arr = Array.from( isSelect ? selectedText : clipboard );
+		_arr.unshift( _arr.shift().toLocaleUpperCase() )
+		const result = ['set'].concat( _arr ).join('');
+
+		editor.edit(builder => {
+			if( isSelect ) builder.delete(editor.selection)
+			builder.insert(editor.selection.start, result)
+		})
 	});
 
-	context.subscriptions.push(disposable);
+	context.subscriptions.push( useState );
 }
-exports.activate = activate;
+
 
 // this method is called when your extension is deactivated
 function deactivate() {}
