@@ -9,11 +9,9 @@ const vscode = require( "vscode" );
  */
 function activate(context) {
 	const { window, commands, Position } = vscode;
-	const editor = window.activeTextEditor;
-
-	if( !editor ) return window.showErrorMessage( 'Need to using on activeTextEditor' );
-
 	const useState = vscode.commands.registerCommand('extension.reactUseState', () => {
+		const editor = window.activeTextEditor;
+		if( !editor ) return window.showErrorMessage( 'Need to using on activeTextEditor' );
 		const clipboard = clipboardy.readSync();
 		const selectedText = editor.document.getText( editor.selection )
 		const isSelect = selectedText.length > 0;
