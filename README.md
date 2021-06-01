@@ -1,11 +1,20 @@
 # React-Use-State
 
-## Now only using for me
+When we use react with useHooks and use state,
+Many snippets supplying just normal snippet.
 
-### So have not any description
+So mostly snippets make like this.
+```
+"const [ $1, set$1 ] = React.useState();"
+```
+but this is not good to camelCase.
 
-#### Sorry, But I will make this more powerful
+So I made it like
 
+<a><img src="https://i.ibb.co/fkNLbcX/react-use-state-example.gif" alt="react-use-state-example" border="0"></a>
+
+Make setter to CamelCase!!
+---
 ---
 
 This will be help for make setter on React.useState;
@@ -33,3 +42,15 @@ Hot Fix by active at all current TextEditor
 
 ## 0.0.4
 Add useState Snippet Improve!!!
+
+## 0.0.5
+Add Example
+
+---
+
+## Will make Function
+### Auto Import useState
+- Current supplying "React.useState", but will be read on settings.json by autoImport boolean
+
+### Supply useEffect, useCallback, useMemo ~~ 
+- If supply other useHooks too, extension name will be change
