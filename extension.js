@@ -1,6 +1,6 @@
+"use strict"
 const clipboardy = require( "clipboardy" );
 const vscode = require( "vscode" );
-
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 

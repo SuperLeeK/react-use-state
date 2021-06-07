@@ -2,6 +2,14 @@
 	"publisher": "zeroMaster",
 	"name": "react-use-state-snippet",
 	"displayName": "react-use-state-snippet",
+	"keywords": [
+		"snippets",
+		"react",
+		"redux",
+		"react-native",
+		"javascript",
+		"typescript"
+	],
 	"repository": {
 		"url": "https://github.com/SuperLeeK/react-use-state"
 	},
@@ -11,11 +19,23 @@
 		"vscode": "^1.39.0"
 	},
 	"categories": [
-		"Other"
+		"Snippets"
+	],
+	"extensionKind": [
+		"ui",
+		"workspace"
 	],
 	"activationEvents": [
 		"onCommand:extension.reactUseState",
 		"onCommand:extension.useStateSnippet"
+	],
+	"keybindings": [
+		{
+			"command": "extension.useStateSnippet",
+			"key": "ctrl+u ctrl+s",
+			"mac": "cmd+u cmd+s",
+			"when": "editorTextFocus"
+		}
 	],
 	"main": "./extension.js",
 	"contributes": {
