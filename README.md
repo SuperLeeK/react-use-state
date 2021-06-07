@@ -30,24 +30,6 @@ this will make to "setHello"
 Done.
 
 
-# Change log
-## 0.0.1
-Initiallize
-
-## 0.0.2
-Add Function
-
-## 0.0.3
-Hot Fix by active at all current TextEditor
-
-## 0.0.4
-Add useState Snippet Improve!!!
-
-## 0.0.5
-Add Example
-
----
-
 ## Will make Function
 ### Auto Import useState
 - Current supplying "React.useState", but will be read on settings.json by autoImport boolean
