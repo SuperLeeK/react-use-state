@@ -48,6 +48,12 @@
 				"command": "extension.useStateSnippet",
 				"title": "use State Snippet"
 			}
+		],
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./snippets/snippet.json"
+			}
 		]
 	},
 	"scripts": {
