@@ -21,4 +21,6 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## 0.0.6
 - Add Snippets
+## 0.0.7
+- Remove semicolon at all snippet's end
 ---
