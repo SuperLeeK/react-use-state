@@ -23,4 +23,6 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Add Snippets
 ## 0.0.7
 - Remove semicolon at all snippet's end
----
+
+## 0.0.8
+- Add logo

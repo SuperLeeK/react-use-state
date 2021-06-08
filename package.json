@@ -2,6 +2,7 @@
 	"publisher": "zeroMaster",
 	"name": "react-use-state-snippet",
 	"displayName": "react-use-state-snippet",
+	"icon": "resources/logo.png",
 	"keywords": [
 		"snippets",
 		"react",
