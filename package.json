@@ -15,7 +15,7 @@
 		"url": "https://github.com/SuperLeeK/react-use-state"
 	},
 	"description": "can make functional snippet",
-	"version": "0.0.8",
+	"version": "1.0.9",
 	"engines": {
 		"vscode": "^1.39.0"
 	},
