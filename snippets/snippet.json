@@ -1,6 +1,5 @@
 {
   "useEffect": {
-    "scope": "typescript, ts, tsx, javascript, js, jsx",
     "prefix": "ue",
     "body": [
       "React.useEffect(() => {",
@@ -9,14 +8,12 @@
     ]
   },
   "useMemo": {
-    "scope": "typescript, ts, tsx, javascript, js, jsx",
     "prefix": "um",
     "body": [
       "React.useMemo($CLIPBOARD, [$1])$0"
     ]
   },
   "useCallback": {
-    "scope": "typescript, ts, tsx, javascript, js, jsx",
     "prefix": "uc",
     "body": [
       "React.useCallback(() => {",
@@ -25,57 +22,46 @@
     ]
   },
   "export default": {
-    "scope": "typescript, ts, tsx, javascript, js, jsx",
     "prefix": "expd",
     "body": "export default $1$0"
   },
   "const destructed props": {
-    "scope": "typescript, ts, tsx, javascript, js, jsx",
     "prefix": "ctp",
     "body": "const {${2:\n\t$3 \n}} = ${1:props}$0"
   },
   "Console_Clear": {
-    "scope": "typescript, ts, tsx, javascript, js, jsx",
     "prefix": "conclear",
     "body": ["console.clear()$0"]
   },
   "Console_Log_Literal": {
-    "scope": "typescript, ts, tsx, javascript, js, jsx",
     "prefix": "clog",
     "body": ["console.log(`$1`${2:,})$0"]
   },
   "Console_Log": {
-    "scope": "typescript, ts, tsx, javascript, js, jsx",
     "prefix": "conlog",
     "body": ["console.log(\"${1:${CLIPBOARD}}:\", ${1:${CLIPBOARD}}$2)$0"]
   },
   "Console_Warn_Literal": {
-    "scope": "typescript, ts, tsx, javascript, js, jsx",
     "prefix": "cwarn",
     "body": ["console.warn(`$1`${2:,})$0"]
   },
   "Console_Warn": {
-    "scope": "typescript, ts, tsx, javascript, js, jsx",
     "prefix": "conwarn",
     "body": ["console.warn(\"${1:${CLIPBOARD}}:\", ${1:${CLIPBOARD}}$2)$0"]
   },
   "Console_Error_Literal": {
-    "scope": "typescript, ts, tsx, javascript, js, jsx",
     "prefix": "cerr",
     "body": ["console.error(`$1`${2:,})$0"]
   },
   "Console_Error": {
-    "scope": "typescript, ts, tsx, javascript, js, jsx",
     "prefix": "conerr",
     "body": ["console.error(\"${1:${CLIPBOARD}}:\", ${1:${CLIPBOARD}}$2)$0"]
   },
   "JSON_Stringify": {
-    "scope": "typescript, ts, tsx, javascript, js, jsx",
     "prefix": "jsons",
     "body": ["JSON.stringify( ${1:$CLIPBOARD}${2:, ${3:null}, ${4:2}} )$0"]
   },
   "JSON_Parse": {
-    "scope": "typescript, ts, tsx, javascript, js, jsx",
     "prefix": "jsonp",
     "body": ["JSON.parse( ${1:$CLIPBOARD} )$0"]
   }

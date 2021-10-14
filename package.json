@@ -27,7 +27,7 @@
 		"workspace"
 	],
 	"activationEvents": [
-		"onCommand:extension.reactUseState",
+		"onCommand:extension.useStateSetter",
 		"onCommand:extension.useStateSnippet"
 	],
 	"keybindings": [
@@ -42,7 +42,7 @@
 	"contributes": {
 		"commands": [
 			{
-				"command": "extension.reactUseState",
+				"command": "extension.useStateSetter",
 				"title": "use State Setter"
 			},
 			{
@@ -52,7 +52,27 @@
 		],
 		"snippets": [
 			{
-				"language": "javascript, typescript",
+				"language": "javascript",
+				"path": "./snippets/snippet.json"
+			},
+			{
+				"language": "javascriptreact",
+				"path": "./snippets/snippet.json"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/snippet.json"
+			},
+			{
+				"language": "typescriptreact",
+				"path": "./snippets/snippet.json"
+			},
+			{
+				"language": "jsx",
+				"path": "./snippets/snippet.json"
+			},
+			{
+				"language": "tsx",
 				"path": "./snippets/snippet.json"
 			}
 		]
