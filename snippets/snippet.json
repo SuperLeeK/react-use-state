@@ -3,8 +3,8 @@
     "prefix": "ue",
     "body": [
       "React.useEffect(() => {",
-      "\t$1",
-      "},[$2])$0"
+      "\t$0",
+      "},[$1])"
     ]
   },
   "useMemo": {
@@ -17,8 +17,8 @@
     "prefix": "uc",
     "body": [
       "React.useCallback(() => {",
-      "\t$1",
-      "},[$2])$0"
+      "\t$0",
+      "},[$1])"
     ]
   },
   "export default": {
@@ -39,7 +39,7 @@
   },
   "Console_Log": {
     "prefix": "conlog",
-    "body": ["console.log(\"${1:${CLIPBOARD}}:\", ${1:${CLIPBOARD}}$2)$0"]
+    "body": ["console.log('${1:${CLIPBOARD}}:', ${1:${CLIPBOARD}}$2)$0"]
   },
   "Console_Warn_Literal": {
     "prefix": "cwarn",
@@ -47,7 +47,7 @@
   },
   "Console_Warn": {
     "prefix": "conwarn",
-    "body": ["console.warn(\"${1:${CLIPBOARD}}:\", ${1:${CLIPBOARD}}$2)$0"]
+    "body": ["console.warn('${1:${CLIPBOARD}}:', ${1:${CLIPBOARD}}$2)$0"]
   },
   "Console_Error_Literal": {
     "prefix": "cerr",
@@ -55,7 +55,7 @@
   },
   "Console_Error": {
     "prefix": "conerr",
-    "body": ["console.error(\"${1:${CLIPBOARD}}:\", ${1:${CLIPBOARD}}$2)$0"]
+    "body": ["console.error('${1:${CLIPBOARD}}:', ${1:${CLIPBOARD}}$2)$0"]
   },
   "JSON_Stringify": {
     "prefix": "jsons",
