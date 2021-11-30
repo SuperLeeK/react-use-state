@@ -36,7 +36,7 @@ function activate(context) {
 		const isSelect = selectedText.length > 0;
 
 		const resultGenerate = ( $1, $2 ) => {
-			return `const [ ${$1}, ${$2} ] = React.useState(\${1});\${0}`
+			return `const [ ${$1}, ${$2} ] = React.useState\${2:<$3>}(\${1});\${0}`
 		}
 
 		window.showInputBox()
