@@ -4,6 +4,11 @@ All notable changes to the "react-use-state-snippet" extension will be documente
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## 1.1.3
+- Supporting generate useState <> for typescript.
+---
+- Will separate typescript, javscript for selectable snippet.
+
 ## 0.0.1
 - Initiallize
 

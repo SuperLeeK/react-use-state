@@ -5,7 +5,7 @@ Many snippets supplying just normal snippet.
 
 So mostly snippets make like this.
 ```
-"const [ $1, set$1 ] = React.useState();"
+"const [ $1, set$1 ] = React.useState<>();"
 ```
 but this is not good to camelCase.
 
